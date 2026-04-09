@@ -1,16 +1,183 @@
-# React + Vite
+# 📚 Book Library App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application where users can explore books, view details, and track reading progress with charts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+🔗 Live Site: https://book-vibe-mdantormia.netlify.app/
+🔗 GitHub Repo: https://github.com/mdantormia1779-dev/book-vibe.git
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is a React-based Book Library application built with React Router. Users can:
+
+* Browse books
+* View detailed information of each book
+* Navigate between pages using routing
+* See reading progress using charts
+
+---
+
+## ✨ Features
+
+* 🔹 Multi-page routing using React Router
+* 🔹 Dynamic route (`/books/:id`) for book details
+* 🔹 Data fetching with loader
+* 🔹 Loading spinner using Suspense
+* 🔹 Chart visualization (Pages to Read)
+* 🔹 Clean UI and structured components
+
+---
+
+## 📌 Pages Included
+
+* 🏠 Home Page
+* 📖 Books Page
+* 📄 Book Details Page
+* 📊 Pages to Read (Chart)
+* ❌ Error Page (404)
+
+---
+
+## 🧠 Core Concepts Used
+
+* React Router (`createBrowserRouter`)
+* Dynamic Routing
+* Loader API (data fetching)
+* Suspense & fallback loading UI
+* Component-based architecture
+* Chart integration
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│── Layout/
+│── Pages/
+│   ├── HomePage/
+│   ├── BooksPage/
+│   ├── BookDetails/
+│   ├── ErrorPage/
+│
+│── Component/
+│   ├── Chart/
+│
+│── Routes/
+│   ├── router.jsx
+│
+│── booksData.json
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* React.js
+* React Router
+* JavaScript (ES6)
+* Recharts
+* Tailwind CSS / DaisyUI
+
+---
+
+## 🧑‍💻 How to Use
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the Project
+
+```bash
+npm run dev
+```
+
+### 4️⃣ Open in Browser
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📖 How to Use the App
+
+### 🏠 Home Page
+
+* Landing page of the application
+* Navigate using the navbar
+
+### 📚 Books Page
+
+* Shows all available books
+* Click any book to see details
+
+### 📄 Book Details Page
+
+* Dynamic route: `/books/:id`
+* Displays detailed information about selected book
+
+### 📊 Pages to Read (Chart)
+
+* Shows reading progress using chart
+* Visualizes pages data
+
+### ❌ Error Page
+
+* Shows when route is not found
+
+---
+
+## 🔄 Data Source
+
+* All book data comes from:
+
+```
+/public/booksData.json
+```
+
+---
+
+## ⚠️ Important Notes
+
+* Make sure `booksData.json` is inside **public folder**
+* Do not change route paths unless needed
+* Internet not required (local JSON used)
+
+---
+
+## 🧪 Example Flow
+
+1. Open app
+2. Go to Books Page
+3. Click any book
+4. See details page
+5. Go to Pages to Read
+6. View chart 📊
+
+---
+
+## 👨‍💻 Author
+
+**Md Antor Mia**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
